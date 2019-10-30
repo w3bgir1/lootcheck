@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
+    "react-redux": "^7.1.1",
+    "react-scripts": "3.2.0",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "sfcookies": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -26,6 +28,28 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme-to-json": "^3.4.3",
+    "fetch-mock": "^8.0.0-alpha.11",
+    "jest-cli": "^20.0.4",
+    "node-fetch": "^2.6.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-test-renderer": "^16.11.0",
+    "redux-mock-store": "^1.5.3"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js",
+      "!src/tempPolyfills.js"
     ]
   }
 }
